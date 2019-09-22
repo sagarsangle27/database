@@ -1,0 +1,507 @@
+Que.1
+
+public class quest1
+{
+
+	public quest1() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+}
+
+class sub extends quest1
+{
+	
+}
+
+class sub2 extends sub
+{
+
+	public sub2() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+}
+
+
+
+Que.2
+
+
+class Vehicle
+{
+	public void start()
+	{
+		
+	}
+}
+
+class FourWheeler extends Vehicle
+{
+	public void start()
+	{
+		
+	}
+}
+
+
+public class quest2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+
+Que.3
+
+
+
+
+class vehicle
+{
+	int carid;
+
+	public vehicle(int carid) {
+		super();
+		this.carid = carid;
+	}
+}
+
+class car extends vehicle
+{
+
+	public car(int carid) {
+		super(carid);
+		// TODO Auto-generated constructor stub
+	}
+	
+}
+
+class bike extends vehicle
+{
+
+	public bike(int carid) {
+		super(carid);
+		// TODO Auto-generated constructor stub
+	}
+	
+}
+
+
+
+
+
+
+
+
+public class quest3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		car c=new car(12);
+		bike b=new bike(23);
+		
+	}
+
+}
+
+
+Que.4
+
+
+
+
+class Top1
+{
+	public void disp1()
+	{
+		
+	}
+}
+
+class Bottom1 extends Top1
+{
+    public void disp1()
+    {
+    	
+    }
+	
+}
+
+class Bottom2 extends Top1
+{
+	public void disp1()
+	{
+		
+	}
+}
+
+class Bottom3 extends Top1
+{
+	public void disp1()
+	{
+		
+	}
+}
+
+
+
+public class quest4 {
+	
+	public static void perform(Top1 ref)
+	{
+		ref.disp1();
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	perform(new Bottom1());
+	perform(new Bottom2());
+	perform(new Bottom3());
+	
+	}
+
+}
+
+
+Que.5
+
+
+abstract class shape
+{
+	abstract public void draw();
+	
+}
+
+ class Triangle extends shape
+{
+
+	@Override
+	public void draw() {
+		// TODO Auto-generated method stub
+		System.out.println("tri");
+	}
+	
+}
+
+
+ class Polygon extends shape
+ {
+
+	@Override
+	public void draw() {
+		// TODO Auto-generated method stub
+		System.out.println("poly");
+	}
+	 
+ }
+ 
+ class Circle extends shape
+ {
+
+	@Override
+	public void draw() {
+		// TODO Auto-generated method stub
+		System.out.println("cir");
+	}
+	 
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+public class quest5 {
+	
+	public static void showshape(shape ref)
+	{
+		ref.draw();
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		shape shapearr[]=new shape[3];
+		shapearr[0]=new Triangle();
+		shapearr[1]=new Polygon();
+		shapearr[2]=new Circle();
+		for(int i=0;i<shapearr.length;i++)
+		{
+			showshape(shapearr[i]);
+		}
+		
+	    
+		
+		
+		
+		
+
+	}
+
+}
+
+
+
+Que.6
+
+
+interface A
+{
+	void disp1();
+	
+}
+
+interface B extends A
+{
+	void disp2();
+}
+
+class C implements B
+{
+
+	@Override
+	public void disp1() {
+		// TODO Auto-generated method stub
+		System.out.println("disp1");
+	}
+
+	@Override
+	public void disp2() {
+		// TODO Auto-generated method stub
+		
+	System.out.println("disp2");
+		
+	}
+	
+	public void disp3()
+	{
+		System.out.println("disp3");
+	}
+	
+}
+
+
+
+
+
+
+
+public class quest6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+  C obj=new C();
+  obj.disp1();
+  obj.disp2();
+  obj.disp3();
+	
+}	}
+
+
+Que.7
+
+
+
+class Parent1
+{
+	void main1()
+	{
+		System.out.println("parent1");
+	}
+}
+
+interface Parent2
+{
+	void main2();
+}
+
+class Child extends Parent1 implements Parent2
+{
+	public void main1()
+	{
+		System.out.println("main1");
+	}
+
+	@Override
+	public void main2() {
+		// TODO Auto-generated method stub
+		System.out.println("main2");
+	}
+	
+	void main3()
+	{
+		System.out.println("main3");
+	}
+	
+}
+
+
+
+
+
+
+
+public class quest7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Child obj=new Child();
+		obj.main3();
+		obj.main2();
+		obj.main1();
+		
+		
+	}
+
+}
+
+
+Que.8
+
+
+
+class base1
+{
+
+	public base1(int num) {
+		super();
+		// TODO Auto-generated constructor stub
+	System.out.println("in base1");
+	}
+   
+	
+}
+
+class sub1 extends base1
+{
+
+	public sub1() {
+		super(0);
+		// TODO Auto-generated constructor stub
+	System.out.println("in sub1 default");
+	}
+	
+	
+	public sub1(int num) {
+		super(num);
+		// TODO Auto-generated constructor stub
+	System.out.println("in sub1 para");
+	}
+
+	
+	public sub1(int num,int num2) {
+		super(num);
+		// TODO Auto-generated constructor stub
+	System.out.println("two para");
+	}
+	
+
+}
+
+
+
+
+
+
+
+public class quest8 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		sub1 s=new sub1();
+		sub1 s1=new sub1(10);
+		sub1 s2=new sub1(10,20);
+		
+		
+		
+		
+		
+	}
+
+}
+
+
+
+Que.9
+
+interface Game
+{
+	void play();
+}
+
+class cricket implements Game
+{
+
+	@Override
+	public void play() {
+		// TODO Auto-generated method stub
+		System.out.println("cri");
+	}
+	
+}
+
+class football implements Game
+{
+
+	@Override
+	public void play() {
+		// TODO Auto-generated method stub
+		System.out.println("foot");
+	}
+	
+}
+
+class tennis implements Game
+{
+
+	@Override
+	public void play() {
+		// TODO Auto-generated method stub
+		System.out.println("tenn");
+	}
+	
+}
+
+
+public class quest9 {
+
+	public void perform(Game ref)
+	{
+		ref.play();
+	}
+	
+	
+	public void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		perform(new cricket());
+		perform(new football());
+		perform(new tennis());
+		
+		
+		
+		
+	}
+
+}
+
+
+
+
+
+
+
