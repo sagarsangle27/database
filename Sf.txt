@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 sffffff testing
+=======
+This is upgraded text
+
+sffffff testing
+>>>>>>> 716c550643dc544eb53b9c28a1c904c86e62a1d5
