@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5ec95e7cac0f10f86d93e1205d2578ac22748e6e
 1. change first git test
 2. 2nd change
 3. 3rd chang
@@ -6,6 +9,7 @@
 6. Six changh
 5. fif change
 
+<<<<<<< HEAD
 =======
 1. change first git test
 2. 2nd change
@@ -15,3 +19,5 @@
 5. fif change
 
 >>>>>>> 716c550643dc544eb53b9c28a1c904c86e62a1d5
+=======
+>>>>>>> 5ec95e7cac0f10f86d93e1205d2578ac22748e6e
